@@ -1,0 +1,17 @@
+---
+- name: Converge
+  hosts: all
+#  become: yes
+#  become_method: su
+#  gather_facts: no
+#  pre_tasks:
+#    - name: Bootstrap Python runtime
+#      raw: /usr/bin/apt-get update && /usr/bin/apt-get install -y python3
+#    - name: Add the intermediate certificate to certificate bundle
+#      command: update-ca-certificates
+#    - name: Update apt cache if needed.
+#      apt: update_cache=yes cache_valid_time=3600
+  tasks:
+    - name: "Include vector"
+      include_role:
+        name: "vector"

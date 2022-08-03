@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Mosin Denis
+  description: vector
+  company: company
+  role_name: vector
+  namespace: neverhyd
+
+  license: license (MIT)
+
+  min_ansible_version: 2.1
+
+
+  platforms:
+   - name: Ubuntu
+     versions:
+     - all
+   - name: Centos
+     versions:
+     - all
+
+  galaxy_tags: []
+dependencies: []
