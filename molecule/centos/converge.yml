@@ -2,10 +2,10 @@
 - name: Converge
   hosts: all
   pre_tasks:
-   # - name: Uncomment appstream repo
-     # become: yes
-     # become_method: su
-     # ansible.builtin.raw: sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* 
+   - name: Uncomment appstream repo
+     become: yes
+     become_method: su
+     ansible.builtin.raw: sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* 
    # - name: Uncomment appstream repo
      # become: yes
      # become_method: su
