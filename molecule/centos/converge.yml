@@ -15,7 +15,7 @@
        # update_cache: yes
    - name: Upgrade all packages
      yum: 
-       name: * 
+       name: "*"
        state: latest
 #  - name: Install Python on Centos
 #      become: yes
