@@ -6,6 +6,7 @@
      become: yes
      become_method: su
      ansible.builtin.raw: sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* 
+     ansible.builtin.raw: sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
    # - name: Uncomment appstream repo
      # become: yes
      # become_method: su
