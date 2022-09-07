@@ -13,8 +13,8 @@
    # - name: Update Package Cache (dnf/CentOS)
      # dnf:
        # update_cache: yes
-   - name: upgrade all packages
-      yum: 
+   - name: Upgrade all packages
+     yum: 
        name: * 
        state: latest
 #  - name: Install Python on Centos
