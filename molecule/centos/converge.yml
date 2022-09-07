@@ -10,10 +10,10 @@
      # become: yes
      # become_method: su
      # ansible.builtin.raw: sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
-   - name: Update Package Cache (dnf/CentOS)
-     dnf:
-       update_cache: yes
-       enablerepo: appstream*
+   # - name: Update Package Cache (dnf/CentOS)
+     # dnf:
+       # update_cache: yes
+       # enablerepo: appstream*
    # - name: Upgrade all packages
      # yum: 
        # name: "*"
