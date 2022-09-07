@@ -13,7 +13,7 @@
    - name: Update Package Cache (dnf/CentOS)
      dnf:
        update_cache: yes
-       enablerepo: "*"
+       enablerepo: appstream
    # - name: Upgrade all packages
      # yum: 
        # name: "*"
