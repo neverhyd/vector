@@ -1,5 +1,5 @@
 ---
   - src: https://github.com/neverhyd/vector.git
     scm: git
-    version: "0.0.1"
+    #version: "0.0.1"
     name: vector 
