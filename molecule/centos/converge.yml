@@ -6,8 +6,7 @@
      become: yes
      become_method: su
      ansible.builtin.raw: sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* 
-
-    - name: Update Package Cache (dnf/CentOS)
+   - name: Update Package Cache (dnf/CentOS)
       dnf:
         update_cache: yes
 #  - name: Install Python on Centos
