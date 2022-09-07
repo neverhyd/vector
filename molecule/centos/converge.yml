@@ -10,13 +10,14 @@
      # become: yes
      # become_method: su
      # ansible.builtin.raw: sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
-   # - name: Update Package Cache (dnf/CentOS)
-     # dnf:
-       # update_cache: yes
-   - name: Upgrade all packages
-     yum: 
-       name: "*"
-       state: latest
+   - name: Update Package Cache (dnf/CentOS)
+     dnf:
+       update_cache: yes
+       enablerepo: "*"
+   # - name: Upgrade all packages
+     # yum: 
+       # name: "*"
+       # state: latest
 #  - name: Install Python on Centos
 #      become: yes
 #      ansible.builtin.package:
